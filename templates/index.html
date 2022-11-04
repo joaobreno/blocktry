@@ -1,0 +1,244 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    
+        <!-- Slider -->
+        <div class="tp-banner-container" id="home">
+            <div class="tp-banner">
+
+                <ul>    
+
+                    <!-- SLIDE  -->
+                    <li data-transition="fade" data-slotamount="5" data-masterspeed="500" data-thumb="{% static 'assets/img/slider-images/thumb1.jpg"  data-saveperformance="off"  data-title="Slide">
+
+                        <!-- MAIN IMAGE -->
+                        <img src="{% static 'assets/img/front/smart3.jpg' %}"  alt="fullslide1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->                        
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption slider-text lfb ltt tp-resizeme text-center"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="-30"        
+                            data-speed="600"
+                            data-start="800"
+                            data-easing="Power4.easeOut"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="500"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">We are a Blockchain<br>Digital Registry
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption lfb ltt tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="100"        
+                            data-speed="600"
+                            data-start="900"
+                            data-easing="Power4.easeOut"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="500"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a href="{% url 'post' %}" class="btn gold-btn">Get In Touch</a>                                                    
+                        </div>
+
+                    </li>
+                    <!-- END SLIDE -->
+
+                    <!-- SLIDE  -->
+                    <li data-transition="fade" data-slotamount="5" data-masterspeed="500" data-thumb="{% static 'assets/img/slider-images/thumb2.jpg"  data-saveperformance="off"  data-title="Slide">
+
+                        <!-- MAIN IMAGE -->
+                        <img src="{% static 'assets/img/front/smart-contracts.webp' %}"  alt="fullslide8"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                        <!-- END MAIN IMAGE -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption slider-text lfb ltt tp-resizeme text-center"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="-30"
+                            data-speed="600"
+                            data-start="800"
+                            data-easing="Power4.easeOut"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="500"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">A secure way to show<br>your contracts
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption lfb ltt tp-resizeme"
+                            data-x="center" data-hoffset="0"
+                            data-y="center" data-voffset="100"
+                            data-speed="600"
+                            data-start="900"
+                            data-easing="Power4.easeOut"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-elementdelay="0.01"
+                            data-endelementdelay="0.1"
+                            data-endspeed="500"
+                            data-endeasing="Power4.easeIn"
+                            style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;"><a href="{% url 'post' %}" class="btn gold-btn">Get In Touch</a>                                                    
+                        </div>
+
+                    </li>
+                    <!-- END SLIDE  -->
+
+                </ul>                      
+
+            </div>
+        </div>  
+        <!-- End Slider -->         
+
+        <!-- Site Wrapper -->
+        <div class="site-wrapper">
+
+            <!-- Who We Are -->            
+            <div class="container padding-bottom">              
+                    
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 about-caption text-center">
+                        <!-- Section General Title -->
+                        <div class="general-title">
+                            <h2>Who We Are</h2>
+                            <div class="space-bottom-2x"></div>   
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        <div class="space-bottom-2x"></div>   
+                    </div>                            
+                </div>                
+                <div class="row">    
+                    <!-- Item -->
+                    <div class="col-md-4 about-caption">
+                        <div class="col-sm-2">
+                            <i class="fa-solid fa-landmark fa-2x"></i>                                    
+                        </div>
+                        <div class="col-sm-10">
+                            <h3>Digital Registry</h3>                                                                        
+                            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                        </div>
+                    </div> 
+
+                    <!-- Item -->
+                    <div class="col-md-4 about-caption">
+                        <div class="col-sm-2">
+                            <i class="fa-solid fa-signature fa-2x"></i>                                                                                
+                        </div>
+                        <div class="col-sm-10">
+                            <h3>Electronic Signature</h3>                                           
+                            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="col-md-4 about-caption">
+                        <div class="col-sm-2">
+                            <i class="fa-solid fa-globe fa-2x"></i>                                                                                
+                        </div>
+                        <div class="col-sm-10">
+                            <h3>GLOBALLY RECOGNIZED</h3>                                                                                            
+                            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>                                
+                        </div>
+                    </div>    
+
+                </div><!-- /row -->                      
+            </div><!-- /container -->                   
+            <!-- End Who We Are -->
+
+            <hr>
+            
+            <!-- Our Services -->            
+            <div class="container padding-bottom padding-top-x2 text-center" id="services">                                 
+                
+                <div class="row"> 
+
+                    <!-- Service Item (title, icon and description for your service) -->
+                    <div class="col-sm-4 col-md-4 service-box">  
+                        <!-- Icon -->                    
+                        <i class="fa-solid fa-file-contract fa-3x"></i>
+
+                        <!-- Title and Description -->
+                        <div class="service-title">    
+                            <h3>Contracts Audits</h3>                      
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>            
+                    </div>
+
+                    <!-- Service Item (title, icon and description for your service) -->
+                    <div class="col-sm-4 col-md-4 service-box service-box-l">  
+                        <!-- Icon -->   
+                        <i class="fa fa-folder-open-o fa-3x"></i>
+                        
+                        <!-- Title and Description -->
+                        <div class="service-title">  
+                            <h3>Fully Documented</h3>      
+                        </div>                
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>            
+                    </div>                        
+
+                    <!-- Service Item (title, icon and description for your service) -->
+                    <div class="col-sm-4 col-md-4 service-box service-box-l">   
+                        <!-- Icon -->  
+                        <i class="fa-solid fa-lock fa-3x"></i>
+                        
+                        <!-- Title and Description -->
+                        <div class="service-title">  
+                            <h3>Blockchain architecture</h3>                      
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>            
+                    </div>                                                              
+
+                    <!-- Service Item (title, icon and description for your service) -->
+                    <div class="col-sm-4 col-md-4 service-box-none">   
+                        <!-- Icon -->  
+                        <i class="fa fa-network-wired fa-3x"></i>
+                        
+                        <!-- Title and Description -->
+                        <div class="service-title">  
+                            <h3>Data Storage</h3>                      
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>            
+                    </div>
+
+                    <!-- Service Item (title, icon and description for your service) -->
+                    <div class="col-sm-4 col-md-4 service-box-none service-box-l">   
+                        <!-- Icon -->  
+                        <i class="fa fa-cog fa-3x"></i>
+                        
+                        <!-- Title and Description -->
+                        <div class="service-title">  
+                            <h3>Seo Optimized</h3>                      
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>            
+                    </div>
+
+                    <!-- Service Item (title, icon and description for your service) -->
+                    <div class="col-sm-4 col-md-4 service-box-none service-box-l">   
+                        <!-- Icon -->  
+                        <i class="fa fa-file-code-o fa-3x"></i> 
+                        
+                        <!-- Title and Description -->
+                        <div class="service-title">  
+                            <h3>Clean Code</h3>                      
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>            
+                    </div>
+
+                </div><!-- /row -->                           
+            </div><!-- /container -->
+            <!-- End Our Services -->
+
+
+         
+
+{% include 'partials/_footer.html' %}
+
+{% endblock %}

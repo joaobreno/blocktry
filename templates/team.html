@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+            <!-- Our Team -->
+            <div class="bg-color padding-top-x2 padding-bottom" >                        
+                <div class="container" style="padding-top: 80px;">  
+                    <!-- Section General Title -->
+                    <div class="general-title text-center">
+                        <h2 style="padding-bottom: 50px;">Our Team</h2>
+                        <div class="space-bottom-2x"></div>      
+                    </div>
+                    
+                    <div class="row"> 
+                                                       
+                        <!-- Team Item (name, information about, image, social icons) -->
+                        {% for contract in contracts %}
+                        {% if forloop.counter|divisibleby:5 %}
+                        </div>
+                        <div class="w-100"></div>
+                        {% endif %}
+                        <div class="col-sm-6 col-md-3" style="padding-bottom: 50px;">
+
+                            <div class="team-inner">
+                                
+                                <a href="#">  
+                                
+                                    <!-- Image -->                  
+                                    <img src="{{ contract.photo.url }}" class="img-circle" alt="Specifie an alternate text for an image" style="width: 275px; height: 275px;" >                    
+                                    <div class="team-caption">
+                                        <!-- Social Icons -->
+                                        <div class="t-social-holder">
+                                            <div class="team-social">                                           
+                                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
+                                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
+                                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a>
+                                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-behance fa-stack-1x fa-inverse"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>                                            
+                                </a>
+                            </div>                                    
+                            <div class="team-details text-center">
+                                <!-- Info -->
+                                <h5>{{contract.role}}</h5>  
+                                <!-- Name -->                                                                                        
+                                <h3>{{contract.name}}</h3>   
+                                <p>Company: {{contract.company}}</p>                                                              
+                            </div>
+                        </div>                                                               
+                        {% endfor %}
+                    </div><!-- /row -->
+                    
+                </div><!-- /container -->  
+                              
+            </div>
+            <!-- End Our Team -->
+            
+
+
+
+{% include 'partials/_footer.html' %}
+
+{% endblock %}
